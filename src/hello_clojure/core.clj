@@ -2,19 +2,19 @@
 (ns hello-clojure.core)
 
 ;; declares a function named foo
-(defn foo
+(defn say-welcome
   ;; The docstring "I don't do a whole lot." provides a brief description of the function's purpose
   "I don't do a whole lot."
-  ;; The argument x is bound to the value passed to the function when it is called.
-  [x]
+  ;; The argument what is bound to the value passed to the function when it is called.
+  [what]
   ;; The body of the function is a single expression that prints a message to the console.
-  (println x "Hello, World!"))
+  (println what "Hello, World!"))
 
 ;; This defines the main function for the project, -main, which can take any number of arguments
 ;; (denoted by & args). The main function calls the foo function with the argument "Clojure",
 ;; resulting in the output "Clojure Hello, World!" when the project is run.
 (defn -main [& args]
-  (foo "Clojure"))
+  (say-welcome "Clojure"))
 
 ;; This makes the main function available to the JVM as the entry point for the project.
 (-main)
