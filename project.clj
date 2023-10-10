@@ -5,8 +5,8 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"} ; the license under which the project is distributed
   :dependencies [[org.clojure/clojure "1.11.1"]]            ; dependencies for the project
   :repl-options {:init-ns hello-clojure.core}               ; sets the namespace to be loaded when starting a REPL
-  ; Specifies the main function that will be executed when the project is run.
-  ; The function is named -main and resides in the hello-clojure.core namespace.
+  ;; Specifies the main function that will be executed when the project is run.
+  ;; The function is named -main and resides in the hello-clojure.core namespace.
   :main hello-clojure.core/-main
   )
 
