@@ -17,7 +17,10 @@
   (say-welcome "Clojure"))
 
 ;; This makes the main function available to the JVM as the entry point for the project.
-(-main)
+;; The -main function is explicitly called at the end of your script, and also implicitly
+;; called by the Clojure runtime when you run the program. The Clojure runtime automatically
+;; calls the -main function if it's defined, so you don't need to call it manually.
+;; (-main)
 
 ;; In Clojure, the name -main for the main function has a convention-based significance, particularly when working
 ;; with the Leiningen build tool.
