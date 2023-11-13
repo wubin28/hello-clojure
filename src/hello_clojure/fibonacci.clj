@@ -1,3 +1,5 @@
+(ns hello-clojure.fibonacci)
+
 (defn fibs-work [n i fs]
   (if (= i n)
     fs
@@ -9,4 +11,6 @@
     (= n 1) [1]
     :else (fibs-work n 2 [1 1])))
 
-(fibs 15)
+(defn -main [& args]
+  (println (fibs 15)))
+
